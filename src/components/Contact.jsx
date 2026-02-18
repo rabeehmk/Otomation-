@@ -1,0 +1,147 @@
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import './Contact.css';
+
+const Contact = () => {
+    const navigate = useNavigate();
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        company: '',
+        message: ''
+    });
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Handle form submission logic here
+        console.log('Form submitted:', formData);
+        navigate('/thank-you');
+    };
+
+    return (
+        <section id="contact" className="section contact-section">
+            <div className="container">
+                <div className="section-header">
+                    <div className="section-tag">Get in Touch</div>
+                    <h2 className="section-title">Start Your Compliance Journey</h2>
+                    <p className="section-subtitle">
+                        Contact our experts to schedule your Gap Analysis and reserve your slot for the July 2026 Pilot Phase.
+                    </p>
+                </div>
+
+                <div className="contact-container">
+                    <div className="contact-info">
+                        <h3>Contact Information</h3>
+                        <p>Our team is ready to assist you with any questions regarding the new E-Invoicing mandate.</p>
+
+                        <div className="info-item">
+                            <div className="icon-box"><Phone size={20} /></div>
+                            <div>
+                                <span className="label">Phone</span>
+                                <a href="tel:+971565757475" className="value">+971 56 575 7475</a>
+                            </div>
+                        </div>
+
+                        <div className="info-item">
+                            <div className="icon-box"><Mail size={20} /></div>
+                            <div>
+                                <span className="label">Email</span>
+                                <a href="mailto:info@otomation.ae" className="value">info@otomation.ae</a>
+                            </div>
+                        </div>
+
+                        <div className="info-item">
+                            <div className="icon-box"><MapPin size={20} /></div>
+                            <div>
+                                <span className="label">Office</span>
+                                <span className="value">Business Bay, Dubai, UAE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="contact-form-wrapper">
+                        <form onSubmit={handleSubmit} className="contact-form">
+                            <div className="form-group">
+                                <label htmlFor="name">Full Name</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    value={formData.name}
+                                    onChange={handleChange}
+                                    required
+                                    placeholder="John Doe"
+                                />
+                            </div>
+
+                            <div className="form-group">
+                                <label htmlFor="email">Work Email</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                    required
+                                    placeholder="john@company.com"
+                                />
+                            </div>
+
+                            <div className="form-group">
+                                <label htmlFor="phone">Phone Number</label>
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    value={formData.phone}
+                                    onChange={handleChange}
+                                    placeholder="+971 50 000 0000"
+                                />
+                            </div>
+
+                            <div className="form-group">
+                                <label htmlFor="company">Company Name</label>
+                                <input
+                                    type="text"
+                                    id="company"
+                                    name="company"
+                                    value={formData.company}
+                                    onChange={handleChange}
+                                    required
+                                    placeholder="Otomation Trading LLC"
+                                />
+                            </div>
+
+                            <div className="form-group full-width">
+                                <label htmlFor="message">Message</label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    value={formData.message}
+                                    onChange={handleChange}
+                                    rows="4"
+                                    placeholder="How can we help you?"
+                                ></textarea>
+                            </div>
+
+                            <button type="submit" className="btn btn-primary full-width">
+                                Submit Inquiry <Send size={18} style={{ marginLeft: '8px' }} />
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default Contact;

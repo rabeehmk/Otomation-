@@ -1,0 +1,318 @@
+/* ===== Thank You Page ===== */
+.thankyou-page {
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+/* --- Hero Section --- */
+.thankyou-hero {
+    position: relative;
+    background: var(--secondary);
+    padding: 100px 0 80px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.thankyou-hero-bg {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.thankyou-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Animated check icon */
+.check-icon-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    margin: 0 auto 2rem;
+    animation: popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+.check-icon {
+    color: #4ade80;
+    filter: drop-shadow(0 0 12px rgba(74, 222, 128, 0.5));
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.thankyou-tag {
+    display: inline-block;
+    background: rgba(74, 222, 128, 0.15);
+    color: #4ade80;
+    border: 1px solid rgba(74, 222, 128, 0.3);
+    padding: 6px 20px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    animation: fadeUp 0.5s 0.3s ease both;
+}
+
+.thankyou-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 1.25rem;
+    line-height: 1.2;
+    animation: fadeUp 0.5s 0.4s ease both;
+    text-wrap: balance;
+}
+
+.thankyou-subtitle {
+    font-size: 1.15rem;
+    color: #cbd5e1;
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+    line-height: var(--lh-relaxed);
+    animation: fadeUp 0.5s 0.5s ease both;
+    text-wrap: pretty;
+}
+
+.thankyou-subtitle strong {
+    color: #ffffff;
+}
+
+.thankyou-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: fadeUp 0.5s 0.6s ease both;
+}
+
+.btn-white {
+    background: #ffffff;
+    color: var(--primary);
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-white:hover {
+    background: #f1f5f9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-white {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-outline-white:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.7);
+    transform: translateY(-2px);
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- What Happens Next --- */
+.thankyou-next {
+    background: #f8fafc;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.next-title {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 800;
+    color: var(--secondary);
+    margin-bottom: 3rem;
+    text-wrap: balance;
+}
+
+.next-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.next-step-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.next-step-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 128, 0.1);
+}
+
+.step-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary);
+    opacity: 0.2;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.next-step-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--secondary);
+    margin-bottom: 0.75rem;
+}
+
+.next-step-card p {
+    color: #64748b;
+    line-height: var(--lh-relaxed);
+    font-size: 0.95rem;
+    text-wrap: pretty;
+}
+
+/* --- Contact Strip --- */
+.thankyou-contact-strip {
+    background: var(--primary);
+    padding: 60px 0;
+}
+
+.thankyou-contact-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.contact-strip-info h3,
+.contact-strip-social h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1.25rem;
+}
+
+.strip-info-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+
+.strip-info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.strip-info-item:hover {
+    color: #ffffff;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    width: 46px;
+    height: 46px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .thankyou-hero {
+        padding: 70px 0 60px;
+    }
+
+    .check-icon-wrapper {
+        width: 90px;
+        height: 90px;
+    }
+
+    .thankyou-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-white,
+    .btn-outline-white {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+
+    .thankyou-contact-inner {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

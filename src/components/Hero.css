@@ -1,0 +1,363 @@
+.hero {
+    position: relative;
+    padding: 140px 0 100px;
+    overflow: hidden;
+    background-color: var(--surface);
+    /* Simple geometric background */
+    background-image: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.hero-bg-glow {
+    /* Removed for cleaner look */
+    display: none;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content {
+    flex: 1;
+    animation: fade-up 0.8s ease-out forwards;
+}
+
+.badge-promo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px;
+    background: #e2e8f0;
+    border-radius: 4px;
+    color: var(--primary);
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.badge-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--primary);
+    border-radius: 50%;
+}
+
+.hero-content h1 {
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: var(--secondary);
+    letter-spacing: -0.02em;
+    overflow-wrap: anywhere;
+    text-wrap: balance;
+}
+
+.text-gradient {
+    color: var(--primary);
+    background: none;
+    -webkit-text-fill-color: initial;
+}
+
+/* Aliases for class names used in JSX */
+.hero-title {
+    font-size: inherit;
+}
+
+.gradient-text {
+    color: var(--primary);
+}
+
+.hero-sub {
+    font-size: 1.25rem;
+    color: var(--text-light);
+    margin-bottom: 2.5rem;
+    max-width: 540px;
+    line-height: var(--lh-relaxed);
+    overflow-wrap: anywhere;
+    text-wrap: pretty;
+}
+
+/* Alias */
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-light);
+    margin-bottom: 2.5rem;
+    max-width: 540px;
+    line-height: var(--lh-relaxed);
+    overflow-wrap: anywhere;
+    text-wrap: pretty;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.btn-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem;
+    background: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.hero-features {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 1.5rem;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    color: var(--text);
+    font-size: 0.9rem;
+}
+
+.feature .icon {
+    color: var(--primary);
+}
+
+/* Visuals - Simplified 3D */
+.hero-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    perspective: 1000px;
+    height: 500px;
+    align-items: center;
+}
+
+.visual-3d-container {
+    position: relative;
+    width: 380px;
+    height: 480px;
+    /* Reduced rotation for cleaner look */
+    transform: rotateY(-5deg);
+    transition: transform 0.5s ease;
+}
+
+.visual-card {
+    background: var(--white);
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: var(--shadow-xl);
+}
+
+.main-card {
+    position: absolute;
+    inset: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 20px;
+}
+
+.brand-mark {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    flex: 1;
+    color: var(--secondary);
+}
+
+.card-status {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    background: #f1f5f9;
+    color: var(--text-light);
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.data-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.data-row .label {
+    color: var(--text-light);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.data-row .value {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+.data-graph {
+    flex: 1;
+    display: flex;
+    gap: 12px;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.graph-bar {
+    flex: 1;
+    background: #f1f5f9;
+    border-radius: 4px;
+    transition: height 1s ease;
+}
+
+.graph-bar.active {
+    background: var(--primary);
+    box-shadow: none;
+}
+
+.floating-card {
+    position: absolute;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 200px;
+    z-index: 20;
+    background: var(--white);
+    border: 1px solid #e2e8f0;
+}
+
+.card-compliance {
+    top: 60px;
+    right: -40px;
+    box-shadow: var(--shadow-lg);
+}
+
+.card-analytics {
+    bottom: 80px;
+    left: -40px;
+    box-shadow: var(--shadow-lg);
+}
+
+.icon-shield,
+.icon-chart {
+    color: var(--primary);
+    background: #f1f5f9;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.floating-text .title {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--secondary);
+}
+
+.floating-text .subtitle {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: clamp(2rem, 6vw, 2.5rem);
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .hero-content {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .hero-features {
+        justify-content: center;
+    }
+
+    .visual-3d-container {
+        transform: none;
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .card-compliance,
+    .card-analytics {
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        margin-top: 1rem;
+        width: 100%;
+        box-shadow: var(--shadow-md);
+    }
+}

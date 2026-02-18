@@ -1,0 +1,148 @@
+#approach {
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.timeline-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 4rem auto 0;
+    padding: 0 20px;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    right: 20px;
+    height: 3px;
+    background: #e2e8f0;
+    z-index: 0;
+    transform: translateY(-50%);
+}
+
+.timeline-steps {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.timeline-step {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.step-marker {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 0 10px var(--white);
+    /* Mask line behind */
+}
+
+.step-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--surface);
+    border: 2px solid #e2e8f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-light);
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.timeline-step:hover .step-icon {
+    border-color: var(--secondary);
+    color: var(--secondary);
+    background: rgba(59, 130, 246, 0.05);
+    transform: scale(1.1);
+}
+
+.step-number {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background: var(--secondary);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    z-index: 3;
+    border: 3px solid var(--white);
+}
+
+.step-content h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--primary);
+}
+
+.step-content p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Response Design */
+@media (max-width: 768px) {
+    .timeline-steps {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .timeline-line {
+        top: 0;
+        bottom: 0;
+        left: 50px;
+        right: auto;
+        width: 3px;
+        height: auto;
+    }
+
+    .timeline-step {
+        flex-direction: row;
+        text-align: left;
+        align-items: flex-start;
+        padding: 0;
+        gap: 1.5rem;
+    }
+
+    .step-marker {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 0;
+    }
+
+    .step-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .step-number {
+        width: 24px;
+        height: 24px;
+        font-size: 0.75rem;
+        right: -5px;
+        top: -5px;
+    }
+}

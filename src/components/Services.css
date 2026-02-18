@@ -1,0 +1,509 @@
+/* Services Page Container */
+.services-page {
+    width: 100%;
+}
+
+/* Hero Section */
+.services-hero {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: var(--white);
+    padding: 120px 0 80px;
+    text-align: center;
+}
+
+.services-page .hero-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-wrap: anywhere;
+    text-wrap: balance;
+}
+
+.services-page .hero-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 2.5rem;
+    color: #cbd5e1;
+    overflow-wrap: anywhere;
+}
+
+.services-hero .btn {
+    font-size: 1.1rem;
+    padding: 14px 32px;
+}
+
+/* Main Services Section */
+.main-services-section {
+    background: var(--surface);
+    padding: 80px 0;
+}
+
+.section-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-light);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: var(--lh-relaxed);
+    text-wrap: pretty;
+}
+
+.main-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.main-service-card {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+}
+
+.main-service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.service-image-placeholder {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-image-placeholder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 128, 0.1) 0%, rgba(0, 0, 128, 0.05) 100%);
+}
+
+.readiness-bg {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+}
+
+.implementation-bg {
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+}
+
+.erp-bg {
+    background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+}
+
+.managed-bg {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.service-content {
+    padding: 2.5rem;
+}
+
+.service-content h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+.service-content p {
+    color: var(--text-light);
+    line-height: var(--lh-relaxed);
+    margin-bottom: 1.5rem;
+    text-wrap: pretty;
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+}
+
+.service-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    color: var(--text);
+    font-weight: 500;
+}
+
+.service-features li svg {
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+/* What We Do Section */
+.what-we-do-section {
+    background: var(--white);
+    padding: 80px 0;
+}
+
+.what-we-do-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.what-card {
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    background: var(--surface);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.what-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.what-card svg {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.what-card h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--secondary);
+    margin-bottom: 0.5rem;
+}
+
+.what-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+/* Who We Serve Section */
+.who-we-serve-section {
+    background: var(--surface);
+    padding: 80px 0;
+}
+
+.who-we-serve-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.serve-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: var(--white);
+    border-radius: 8px;
+    border-left: 4px solid var(--primary);
+    transition: all 0.3s ease;
+}
+
+.serve-card:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow-md);
+}
+
+.serve-card svg {
+    color: var(--primary);
+    flex-shrink: 0;
+}
+
+.serve-card span {
+    font-weight: 600;
+    color: var(--text);
+}
+
+/* Our Approach Section */
+.our-approach-section {
+    background: var(--white);
+    padding: 80px 0;
+}
+
+.approach-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.approach-step {
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    background: var(--surface);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.approach-step:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.step-number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--primary);
+    opacity: 0.2;
+    margin-bottom: 1rem;
+}
+
+.approach-step h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--secondary);
+    margin-bottom: 0.75rem;
+}
+
+.approach-step p {
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+/* System-Agnostic Section */
+.system-agnostic-section {
+    background: var(--surface);
+    padding: 80px 0;
+}
+
+.system-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.system-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+}
+
+.system-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.system-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.excel-icon {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: var(--white);
+}
+
+.pos-icon {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: var(--white);
+}
+
+.crm-icon {
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+    color: var(--white);
+}
+
+.accounting-icon {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    color: var(--white);
+}
+
+.erp-icon {
+    background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+    color: var(--white);
+}
+
+.system-card:hover .system-icon {
+    transform: scale(1.1);
+}
+
+.system-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+.system-card p {
+    color: var(--text-light);
+    line-height: var(--lh-relaxed);
+    margin-bottom: 1rem;
+    text-wrap: pretty;
+}
+
+.system-note {
+    font-size: 0.95rem;
+    color: var(--text);
+    font-weight: 500;
+}
+
+/* Final CTA Section */
+.final-cta-section {
+    background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+    color: var(--white);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    color: #cbd5e1;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-content .btn {
+    background: var(--white);
+    color: var(--primary);
+}
+
+.cta-content .btn:hover {
+    background: var(--surface);
+    transform: translateY(-2px);
+}
+
+/* Bottom CTA Banner */
+.bottom-cta-banner {
+    background: var(--white);
+    padding: 60px 0;
+    border-top: 1px solid #e2e8f0;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.banner-text h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--secondary);
+    margin-bottom: 0.5rem;
+}
+
+.banner-text p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .main-services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-page .hero-title {
+        font-size: clamp(1.75rem, 6vw, 2rem);
+    }
+
+    .services-page .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .services-hero {
+        padding: 80px 0 60px;
+    }
+
+    .main-services-section,
+    .what-we-do-section,
+    .who-we-serve-section,
+    .our-approach-section,
+    .system-agnostic-section,
+    .final-cta-section {
+        padding: 60px 0;
+    }
+
+    .main-services-grid,
+    .what-we-do-grid,
+    .who-we-serve-grid,
+    .approach-steps,
+    .system-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .service-image-placeholder {
+        height: 200px;
+    }
+
+    .service-content {
+        padding: 2rem;
+    }
+
+    .service-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .banner-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+
+    .bottom-cta-banner {
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-page .hero-title {
+        font-size: 1.6rem;
+    }
+
+    .service-content h3 {
+        font-size: 1.25rem;
+    }
+
+    .system-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .approach-steps {
+        gap: 1.5rem;
+    }
+}
