@@ -1,18 +1,17 @@
 .contact-section {
-    background-color: var(--secondary);
-    /* Dark Navy */
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--secondary);
     padding: 100px 0;
 }
 
 .contact-section .section-title {
-    color: #0c0264 !important;
+    color: var(--secondary) !important;
     line-height: 1.3;
     word-wrap: break-word;
 }
 
 .contact-section .section-subtitle {
-    color: #000000 !important;
+    color: var(--text-light) !important;
     line-height: 1.8;
     max-width: 800px;
     margin-left: auto;
@@ -21,9 +20,9 @@
 }
 
 .contact-section .section-tag {
-    background: rgba(255, 255, 255, 0.15);
-    color: #000000 !important;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: var(--slate-100);
+    color: var(--secondary) !important;
+    border: 1px solid var(--slate-200);
 }
 
 .contact-container {
@@ -42,13 +41,13 @@
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: #01065f !important;
+    color: var(--secondary) !important;
     line-height: 1.4;
     word-wrap: break-word;
 }
 
 .contact-info p {
-    color: #020303 !important;
+    color: var(--text-light) !important;
     margin-bottom: 2.5rem;
     line-height: var(--lh-relaxed);
     word-wrap: break-word;
@@ -77,7 +76,7 @@
 .info-item .label {
     display: block;
     font-size: 0.85rem;
-    color: #000000 !important;
+    color: var(--text-light) !important;
     margin-bottom: 4px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -87,7 +86,7 @@
 .info-item .value {
     font-size: 1.1rem;
     font-weight: 600;
-    color: #000000 !important;
+    color: var(--secondary) !important;
     line-height: 1.5;
     word-wrap: break-word;
     text-decoration: none;

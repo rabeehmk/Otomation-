@@ -1,59 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  /* Navy Blue Theme Palette */
-  --primary: #000080;
-  /* Navy Blue */
-  --secondary: #0f172a;
-  /* Dark Slate/Black */
-  --accent: #2563eb;
-  /* Royal Blue */
+  /* Black & White Theme Palette */
+  --primary: #000000;
+  /* Primary black */
+  --secondary: #111111;
+  /* Slightly softer black for headings */
+  --accent: #000000;
+  /* Keep accent as black to avoid color */
   --background: #ffffff;
-  /* White */
-  --surface: #f8fafc;
-  /* Very Light Gray */
-  --text: #0f172a;
-  /* Dark Slate */
-  --text-light: #475569;
-  /* Slate Gray */
+  /* White background */
+  --surface: #f7f7f7;
+  /* Very light gray for cards/sections */
+  --text: #111111;
+  /* Main text color */
+  --text-light: #555555;
+  /* Muted gray text */
   --white: #ffffff;
 
-  /* Extended Color Palette - Navy Shades */
-  --navy-900: #0f172a;
-  --navy-800: #1e293b;
-  --navy-700: #334155;
+  /* Extended "Navy" palette mapped to grays */
+  --navy-900: #111111;
+  --navy-800: #1f1f1f;
+  --navy-700: #2b2b2b;
 
-  /* Slate Shades */
-  --slate-50: #f8fafc;
-  --slate-100: #f1f5f9;
-  --slate-200: #e2e8f0;
-  --slate-300: #cbd5e1;
-  --slate-400: #94a3b8;
-  --slate-500: #64748b;
-  --slate-600: #475569;
-  --slate-700: #334155;
-  --slate-800: #1e293b;
-  --slate-900: #0f172a;
+  /* Slate Shades mapped to neutral grays */
+  --slate-50: #fafafa;
+  --slate-100: #f0f0f0;
+  --slate-200: #e0e0e0;
+  --slate-300: #cccccc;
+  --slate-400: #b3b3b3;
+  --slate-500: #999999;
+  --slate-600: #777777;
+  --slate-700: #555555;
+  --slate-800: #333333;
+  --slate-900: #111111;
 
-  /* Blue Shades */
-  --royal-blue: #2563eb;
-  --blue-50: #eff6ff;
-  --blue-100: #dbeafe;
-  --blue-500: #3b82f6;
-  --blue-600: #2563eb;
-  --blue-700: #1d4ed8;
+  /* Blue Shades mapped to neutral grays */
+  --royal-blue: #000000;
+  --blue-50: #f5f5f5;
+  --blue-100: #e5e5e5;
+  --blue-500: #666666;
+  --blue-600: #444444;
+  --blue-700: #222222;
 
-  /* Cyan Shades */
-  --cyan-400: #22d3ee;
-  --cyan-500: #06b6d4;
+  /* Cyan Shades mapped to neutral grays */
+  --cyan-400: #777777;
+  --cyan-500: #555555;
 
   /* Gray Shades */
-  --gray-100: #f3f4f6;
-  --gray-200: #e5e7eb;
-  --gray-300: #d1d5db;
-  --gray-600: #4b5563;
-  --gray-700: #374151;
-  --gray-800: #1f2937;
+  --gray-100: #f5f5f5;
+  --gray-200: #e5e5e5;
+  --gray-300: #d4d4d4;
+  --gray-600: #525252;
+  --gray-700: #404040;
+  --gray-800: #262626;
 
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);

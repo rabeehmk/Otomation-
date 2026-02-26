@@ -6,8 +6,8 @@ const ContactPage = () => {
         <div style={{ paddingTop: '80px' }}>
             <div className="section-header" style={{ paddingTop: '2rem', paddingBottom: '2rem', textAlign: 'center', background: '#ffffff' }}>
                 <div className="container">
-                    <h1 className="section-title" style={{ color: '#000080' }}>Contact Us</h1>
-                    <p style={{ fontSize: '1.1rem', color: '#475569' }}>
+                    <h1 className="section-title" style={{ color: '#000000' }}>Contact Us</h1>
+                    <p style={{ fontSize: '1.1rem', color: '#000000' }}>
                         Get in touch with our expert team for your compliance assessment.
                     </p>
                 </div>

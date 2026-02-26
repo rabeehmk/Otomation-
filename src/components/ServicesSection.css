@@ -4,6 +4,14 @@
     color: var(--white);
 }
 
+.services-section .section-title {
+    color: var(--white);
+}
+
+.services-section .section-subtitle {
+    color: var(--slate-200);
+}
+
 .services-content {
     padding-bottom: 4rem;
 }
