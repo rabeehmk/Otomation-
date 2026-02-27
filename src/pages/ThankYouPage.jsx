@@ -79,16 +79,31 @@ const ThankYouPage = () => {
                     <div className="contact-strip-social">
                         <h3>Follow Us</h3>
                         <div className="social-icons">
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="LinkedIn">
+                            <a
+                                href="https://www.linkedin.com/company/otomation-uae/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="social-icon"
+                                aria-label="LinkedIn"
+                            >
                                 <Linkedin size={22} />
                             </a>
-                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Twitter">
-                                <Twitter size={22} />
-                            </a>
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Instagram">
+                            <a
+                                href="https://www.instagram.com/otomation.ae/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="social-icon"
+                                aria-label="Instagram"
+                            >
                                 <Instagram size={22} />
                             </a>
-                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Facebook">
+                            <a
+                                href="https://www.facebook.com/profile.php?id=61587152263769"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="social-icon"
+                                aria-label="Facebook"
+                            >
                                 <Facebook size={22} />
                             </a>
                         </div>

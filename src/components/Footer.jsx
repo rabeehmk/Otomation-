@@ -44,9 +44,15 @@ const Footer = () => {
                 <div className="footer-bottom">
                     <p>&copy; 2026 Otomation UAE. All rights reserved.</p>
                     <div className="social-links">
-                        <a href="#" aria-label="Facebook"><Facebook size={20} /></a>
-                        <a href="#" aria-label="LinkedIn"><Linkedin size={20} /></a>
-                        <a href="#" aria-label="Instagram"><Instagram size={20} /></a>
+                        <a href="https://www.facebook.com/profile.php?id=61587152263769" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <Facebook size={20} />
+                        </a>
+                        <a href="https://www.linkedin.com/company/otomation-uae/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <Linkedin size={20} />
+                        </a>
+                        <a href="https://www.instagram.com/otomation.ae/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <Instagram size={20} />
+                        </a>
                     </div>
                 </div>
             </div>

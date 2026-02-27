@@ -125,26 +125,17 @@ const HomeExtras = () => {
             <div className="home-info-card">
               <div className="home-card-title">Otomation</div>
               <p>
-                Automation is the use of modern technology to perform tasks automatically with minimal human effort. It helps
-                homes and businesses improve efficiency, accuracy, and security by controlling systems such as lighting,
-                access control, CCTV, billing, and business processes.
-              </p>
-              <p>
-                With automation, operations become faster, safer, and more reliable, helping organizations save time, reduce
-                errors, and enhance overall productivity.
+              Otomation is a leading TaxTech and compliance automation platform, empowering CFOs, finance leaders, and compliance teams across the UAE to manage e-Invoicing, VAT, and digital reporting with confidence. Powered by Agentic AI, Otomation simplifies compliance, accelerates automation, and keeps finance teams ahead of evolving FTA and ZATCA mandates. With over 135 million invoices processed annually, 10,000+ customers, and 100+ ERP integrations, Otomation provides a unified ecosystem for the CFO’s office, connecting all financial and compliance workflows in one seamless platform.
               </p>
             </div>
 
             <div className="home-info-card">
               <div className="home-card-title">e-Invoice</div>
               <p>
-                e-Invoicing (electronic invoicing) is a digital method of creating, sending, and managing invoices{' '}
-                <strong>electronically</strong> instead of using paper bills. It helps businesses <strong>improve accuracy</strong>,{' '}
-                <strong>reduce paperwork</strong>, <strong>speed up billing</strong>, and maintain organized financial records.
-              </p>
-              <p>
-                By using e-invoicing, companies can ensure <strong>faster transactions</strong>, <strong>better compliance</strong>,
-                and efficient financial management.
+              Pre-approved e-Invoicing Service Provider by the UAE Ministry of Finance.
+              Otomation uses Agentic AI to automate UAE E-Invoicing, ensuring compliance, accuracy, and faster invoice cycles.
+              It is a structured form of an invoice data that is issued and exchanged electronically between a supplier and a buyer and reported electronically to the UAE Federal Tax Authority.
+              It is important to note that unstructured invoice formats such as pdf, word document, images, scanned copies and emails are not eInvoices.
               </p>
             </div>
           </div>

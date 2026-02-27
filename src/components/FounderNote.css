@@ -3,7 +3,7 @@
 }
 
 .note-card {
-    background: linear-gradient(135deg, var(--primary), #1e293b);
+    background: #000000;
     color: var(--white);
     border-radius: 24px;
     padding: 4rem;

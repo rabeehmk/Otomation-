@@ -362,8 +362,8 @@
 }
 
 .testimonial-card {
-    background: var(--white);
-    border: 1px solid var(--slate-200);
+    background: #000000;
+    border: 1px solid #000000;
     border-radius: 14px;
     padding: 1.75rem;
     margin: 0;
@@ -371,17 +371,17 @@
 
 .testimonial-card blockquote {
     margin: 0 0 1rem 0;
-    color: var(--slate-800);
+    color: #ffffff;
     line-height: 1.6;
 }
 
 .testimonial-name {
     font-weight: 800;
-    color: var(--navy-900);
+    color: #ffffff;
 }
 
 .testimonial-role {
-    color: var(--slate-600);
+    color: #e5e5e5;
     font-size: 0.95rem;
 }
 
