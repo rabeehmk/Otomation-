@@ -124,16 +124,13 @@ const About = () => {
                             <div className="vm-card vision">
                                 <h4>Our Vision</h4>
                                 <p>
-                                    To pioneer intelligent automation solutions that streamline operations, enhance security, and drive sustainable growth for businesses and homes across industries.
-                                </p>
-                                <p className="vm-note">
-                                    We transform complex systems into simple, reliable processes—delivering measurable efficiency, cost savings, and peace of mind through cutting-edge IoT, PLC/SCADA, and smart integrations.
+                                To drive economic growth by helping enterprises become more efficient and globally competitive through compliance automation. With OTOMATION we aim to power a digital-first future where businesses thrive with confidence and speed.
                                 </p>
                             </div>
                             <div className="vm-card mission">
                                 <h4>Our Mission</h4>
                                 <p>
-                                    To revolutionize operations through intelligent automation, delivering seamless IoT integrations, predictive maintenance, and energy-efficient systems that empower businesses to achieve peak performance while reducing costs and environmental impact.
+                                To  drive ecnomic  growth by helping entriprises become more efficent and globally compititive through compilence through automation. With Otomation we aim to power a digital-first future where bussiness thive with confident and speed
                                 </p>
                             </div>
                         </div>

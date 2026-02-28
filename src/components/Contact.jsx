@@ -63,7 +63,7 @@ const Contact = () => {
                             <div className="icon-box"><MapPin size={20} /></div>
                             <div>
                                 <span className="label">Office</span>
-                                <span className="value">Business Bay, Dubai, UAE</span>
+                                <a href="https://share.google/nq7lc622zOk594zSO" target="_blank" rel="noopener noreferrer" className="value">Business Bay, Dubai, UAE</a>
                             </div>
                         </div>
                     </div>
