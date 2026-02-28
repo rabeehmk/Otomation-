@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import './Header.css';
 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const { pathname } = useLocation();
+    const isAboutOrThankYou = pathname === '/about' || pathname === '/thank-you';
 
     useEffect(() => {
         const handleScroll = () => {
@@ -21,11 +23,11 @@ const Header = () => {
     };
 
     return (
-        <header className={`header ${isScrolled ? 'scrolled' : ''} `}>
+        <header className={`header ${isScrolled ? 'scrolled' : ''} ${isAboutOrThankYou ? 'header-solid' : ''}`}>
             <div className="container header-container">
                 <Link to="/" className="logo logo-brand">
                     <img
-                        src="/otomation-logo.png"
+                        src="/eedbbe4b-bfc0-4500-b1e1-a2442ab24826.jpeg"
                         alt="Otomation logo"
                         className="logo-img"
                     />

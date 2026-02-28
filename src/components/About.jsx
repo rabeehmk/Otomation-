@@ -117,14 +117,7 @@ const About = () => {
                             <h3>Our Story</h3>
                             <h4 className="story-subtitle">Our Experience</h4>
                             <p>
-                                The company is led by a technology professional with over 10 years of experience as Head of IT &amp; ERP for a UAE-based group operating across six business verticals.
-                            </p>
-                            <div className="founder-quote">
-                                <p>"Having worked closely with hundreds of suppliers and service providers across the UAE, we understand the real challenges businesses face."</p>
-                                <cite>— Founder, Otomation</cite>
-                            </div>
-                            <p>
-                                We simplify UAE e-Invoicing compliance and act as a trusted, long-term partner for businesses.
+                            OTOMATION  is a leading TaxTech and compliance automation platform, empowering CFOs, finance leaders, and compliance teams across the UAE to manage e-Invoicing, VAT, and digital reporting with confidence. Powered by Agentic AI, OTOMATION simplifies compliance, accelerates automation, and keeps finance teams ahead of evolving FTA and ZATCA mandates. With over 135 million invoices processed annually, 10,000+ customers, and 100+ ERP integrations, OTOMATION provides a unified ecosystem for the CFO’s office, connecting all financial and compliance workflows in one seamless platform.
                             </p>
                         </div>
                         <div className="vision-mission">

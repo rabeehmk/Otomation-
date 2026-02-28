@@ -56,7 +56,7 @@ const ThankYouPage = () => {
             </div>
 
             {/* Contact Info + Social */}
-            <div className="thankyou-contact-strip">
+            {/* <div className="thankyou-contact-strip">
                 <div className="container thankyou-contact-inner">
                     <div className="contact-strip-info">
                         <h3>Need Immediate Assistance?</h3>
@@ -109,7 +109,7 @@ const ThankYouPage = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };
