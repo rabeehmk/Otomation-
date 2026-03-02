@@ -20,11 +20,30 @@ const Contact = () => {
         });
     };
 
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     // Handle form submission logic here
+    //     console.log('Form submitted:', formData);
+    //     navigate('/thank-you');
+    // };
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission logic here
-        console.log('Form submitted:', formData);
-        navigate('/thank-you');
+    
+        const subject = encodeURIComponent('New enquiry from Otomation UAE website');
+        const body = encodeURIComponent(
+            `Name: ${formData.name}
+    Email: ${formData.email}
+    Phone: ${formData.phone}
+    Company: ${formData.company}
+    Message:
+    ${formData.message}`
+        );
+    
+        // Opens the user’s default mail client with all data filled in
+        window.location.href = `mailto:info@otomation.com?subject=${subject}&body=${body}`;
+    
+        // Keep your existing behaviour (thank-you page) if you want:
+        // navigate('/thank-you');
     };
 
     return (
