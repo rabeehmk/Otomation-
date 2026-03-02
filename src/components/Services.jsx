@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Search, Settings, Server, ShieldCheck, ArrowRight, CheckCircle, Users, Target, TrendingUp, FileText, Monitor, Database, BarChart3 } from 'lucide-react';
 import './Services.css';
 
@@ -12,7 +13,7 @@ const Services = () => {
                     <p className="hero-subtitle">
                         We help businesses transition from manual invoicing and legacy systems to fully compliant digital invoicing solutions—securely, efficiently, and on time.
                     </p>
-                    <button className="btn btn-primary">Get Started</button>
+                    <Link to="/contact" className="btn btn-primary">Get Started</Link>
                 </div>
             </section>
 
@@ -290,7 +291,7 @@ const Services = () => {
                         <p>
                             Have questions about e-invoicing or compliance? Our team is ready to assist you with the right solution for your business.
                         </p>
-                        <button className="btn btn-primary">Contact Us</button>
+                        <Link to="/contact" className="btn btn-primary">Contact Us</Link>
                     </div>
                 </div>
             </section>
@@ -303,7 +304,7 @@ const Services = () => {
                             <h3>Ensure your invoicing processes are compliant, efficient, and future-ready.</h3>
                             <p>Let us help you implement the right solution with confidence.</p>
                         </div>
-                        <button className="btn btn-primary">Start Your Project</button>
+                        <Link to="/contact" className="btn btn-primary">Start Your Project</Link>
                     </div>
                 </div>
             </section>

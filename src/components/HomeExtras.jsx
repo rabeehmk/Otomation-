@@ -45,7 +45,7 @@ const HomeExtras = () => {
     setLead({
       firstName: '',
       lastName: '',
-      email: '',
+      email: 'info@otomation.com',
       mobile: '',
       companyName: '',
       city: ''
