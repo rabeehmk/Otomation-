@@ -7,7 +7,7 @@ const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const { pathname } = useLocation();
-    const isAboutOrThankYou = pathname === '/about' || pathname === '/thank-you';
+    const isPagesWithDarkHero = pathname === '/about' || pathname === '/thank-you' || pathname === '/services';
 
     useEffect(() => {
         const handleScroll = () => {
@@ -23,7 +23,7 @@ const Header = () => {
     };
 
     return (
-        <header className={`header ${isScrolled ? 'scrolled' : ''} ${isAboutOrThankYou ? 'header-solid' : ''}`}>
+        <header className={`header ${isScrolled ? 'scrolled' : ''} ${isPagesWithDarkHero ? 'header-solid' : ''}`}>
             <div className="container header-container">
                 <Link to="/" className="logo logo-brand">
                     <img

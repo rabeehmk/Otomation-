@@ -268,6 +268,17 @@ p {
   text-wrap: pretty;
 }
 
+/* ── Section Intro (page intro text) ── */
+.section-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--text-light);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: var(--lh-relaxed);
+  text-wrap: pretty;
+}
+
 .section:nth-child(even) {
   background-color: var(--surface);
 }
@@ -283,6 +294,7 @@ p {
 
 .footer {
   background-color: #0f172a;
+  color: #ffffff;
 }
 
 /* ── Scrollbar ── */
